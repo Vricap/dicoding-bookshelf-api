@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=9000 node server.js",
-    "start:dev": "PORT=9000 npx eslint --fix && npm run lint && node server.js",
+    "start": "PORT=9000 node src/server.js",
+    "start:dev": "npx eslint --fix && npm run lint && PORT=9000 node src/server.js",
     "lint": "eslint ./"
   },
   "keywords": [],
@@ -12,7 +12,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@hapi/hapi": "^21.3.10"
+    "@hapi/hapi": "^21.3.10",
+    "nanoid": "^3.3.7"
   },
   "devDependencies": {
     "eslint": "^9.11.0",

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "PORT=9000 node server.js",
-    "start:dev": "PORT=9000 nodemon server.js",
+    "start:dev": "PORT=9000 npx eslint --fix && npm run lint && node server.js",
     "lint": "eslint ./"
   },
   "keywords": [],

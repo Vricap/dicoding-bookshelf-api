@@ -1,0 +1,22 @@
+{
+  "name": "final-assigment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=9000 node server.js",
+    "start:dev": "PORT=9000 nodemon server.js",
+    "lint": "eslint ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.10"
+  },
+  "devDependencies": {
+    "eslint": "^9.11.0",
+    "eslint-config-dicodingacademy": "^0.9.4",
+    "nodemon": "^3.1.7"
+  }
+}
